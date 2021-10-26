@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: visual-hashing-deployment
+  labels:
+    app: visual-hashing
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: visual-hashing
+  template:
+    metadata:
+      labels:
+        app: visual-hashing
+    spec:
+      containers:
+      - name: visual-hashing
+        image: adipurnomo/visual-hashing
+        ports:
+        - containerPort: 80
