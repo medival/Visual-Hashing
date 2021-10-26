@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: visual-hashing
-        image: adipurnomo/visual-hashing
+        image: docker.io/adipurnomo/visual-hashing:v1
         ports:
         - containerPort: 80
